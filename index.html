@@ -13,14 +13,29 @@
     <!-- DaisyUi and tailwind css cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- custom styles -->
-    <style>
-        .font-lato{
-            font-family: 'Lato', sans-serif;
+    <!-- custom styles codes for my project -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'my-heading-color': '#121212',
+                'my-text-color': 'rgba(18, 18, 18, 0.60)',
+                'my-tomato-color': '#F85559',
+              },
+              fontFamily: {
+                'font-lato': ['Lato', 'sans-serif']
+              },
+              backgroundImage: {
+                'my-background-color': '#F85559'
+              }
+            }
+          }
         }
-    </style>
+      </script>
+
 </head>
-<body>
-    
+<body class="font-lato">
+    <div class="text-">dsdsfsss</div>
 </body>
 </html>
