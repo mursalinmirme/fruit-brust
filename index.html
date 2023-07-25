@@ -18,17 +18,20 @@
         tailwind.config = {
           theme: {
             extend: {
-              colors: {
-                'my-heading-color': '#121212',
-                'my-text-color': 'rgba(18, 18, 18, 0.60)',
-                'my-tomato-color': '#F85559',
-              },
-              fontFamily: {
-                'font-lato': ['Lato', 'sans-serif']
-              },
-              backgroundImage: {
-                'my-background-color': '#F85559'
-              }
+                colors: {
+                 'my-heading-color': '#121212',
+                 'my-text-color': 'rgba(18, 18, 18, 0.60)',
+                 'my-tomato-color': '#F85559',
+                },
+                fontFamily: {
+                 'lato': ['Lato', 'sans-serif'],
+                },
+                backgroundColor: {
+                 'my-background-color': '#F85559',
+                },
+                backgroundImage: {
+                    'banner-one-bg': 'url(./images/banner4.png),linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)'
+                }
             }
           }
         }
@@ -37,12 +40,75 @@
 </head>
 <body class="font-lato">
     <!-- header -->
-    <header>
+    <header class="max-w-screen-xl mx-auto lg:mt-5">
+        <!-- navbar start -->
 
+        <div class="navbar flex justify-between lg:bg-my-background-color px-5 py-2 lg:px-7 lg:py-5 rounded-full">
+            <div class="navbar-start hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-lg text-white">Home</a></li>
+                <li><a class="text-lg text-white">About Us</a></li>
+                <li><a class="text-lg text-white">Shop</a></li>
+                <li><a class="text-lg text-white">All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="navbar-center">
+              <a class="flex items-center">
+                <img class="w-8 lg:w-11" src="./images/logo.png" alt="">
+                <h1 class="text-2xl lg:text-4xl lg:text-white ml-1 lg:ml-3 font-bold">Fruit Brust</h1>
+              </a>
+            </div>
+            <div class="navbar-end">
+                <div class="dropdown">
+                  <label tabindex="0" class="text-2xl lg:hidden ">
+                    <i class="fa-solid fa-bars"></i>
+                  </label>
+                  <ul tabindex="0" class="menu -left-48 menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                    <li><a class="text-lg text-text-heading-color">Home</a></li>
+                   <li><a class="text-lg text-text-heading-color">About Us</a></li>
+                   <li><a class="text-lg text-text-heading-color">Shop</a></li>
+                   <li><a class="text-lg text-heading-color">All Fruits</a></li>
+                  </ul>
+                </div>
+                <a class="hidden lg:block">
+                    <div class="relative">
+                        <input class="bg-white text-heading-color border-none outline-none px-5 py-3 rounded-full w-72" type="text" placeholder="search here" />
+                        <button class="absolute top-0 right-0 w-16 h-full text-base"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </a>
+              </div>
+        </div>
+
+        <!-- nav bar end -->
     </header>
     <!-- main section -->
-    <main>
+    <main class="max-w-screen-xl mx-auto">
+        <!-- banner section -->
+        <section class="mt-5">
+            <!-- banner container -->
+            <div>
+                <div class="carousel w-full">
+                    <!-- single slider -->
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <div class="hero h-[550px] bg-banner-one-bg bg-blend-hard-light">
+                            <div class="hero-overlay bg-opacity-60"></div>
+                            <div class="hero-content text-center text-neutral-content">
+                              <div class="max-w-2xl">
+                                <h1 class="mb-5 text-7xl text-white font-black leading-tight md:leading-tight">Exotic tastes at your doorstep</h1>
+                                <p class="mb-5 text-xl font-medium text-white">We supply highly quality organic products</p>
+                                <button class="btn bg-my-background-color border-none outline-none text-white">Shop Now</button>
+                              </div>
+                            </div>
+                          </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-7 right-7 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
 
+                  </div>
+            </div>
+        </section>
     </main>
     <!-- footer section -->
     <footer>
