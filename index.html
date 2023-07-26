@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <title>Fruit Brust</title>
     <!-- lato font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,10 @@
                  'my-background-color': '#F85559',
                 },
                 backgroundImage: {
-                    'banner-one-bg': 'url(./images/banner4.png),linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)'
+                    'banner-one-bg': 'url(./images/banner1.png),linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)',
+                    'banner-two-bg': 'url(./images/banner2.png),linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)',
+                    'banner-three-bg': 'url(./images/banner3.png),linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)',
+                    'banner-four-bg': 'url(./images/banner4.png),linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)',
                 }
             }
           }
@@ -86,33 +90,212 @@
         <!-- banner section -->
         <section class="mt-5">
             <!-- banner container -->
-            <div>
+            <div class="relative">
                 <div class="carousel w-full">
-                    <!-- single slider -->
+                    <!-- single slider 1 -->
                     <div id="slide1" class="carousel-item relative w-full">
                         <div class="hero h-[550px] bg-banner-one-bg bg-blend-hard-light">
+                            <div class="hero-overlay bg-opacity-50"></div>
+                            <div class="hero-content text-center text-neutral-content">
+                              <div class="max-w-2xl -mt-20">
+                                <h1 class="mb-5 text-7xl text-white font-black leading-tight md:leading-tight">Exotic tastes at your doorstep</h1>
+                                <p class="mb-5 text-lg font-medium text-white">We supply highly quality organic products</p>
+                                <button class="px-6 py-3 text-lg font-bold rounded-md bg-my-background-color border-none outline-none text-white mt-4">Shop Now</button>
+                              </div>
+                            </div>
+                          </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 lg:left-7 lg:right-7 top-1/2">
+                        <a href="#slide4" class="bg-black text-white w-10 h-10 rounded-full justify-center flex items-center text-lg">❮</a> 
+                        <a href="#slide2" class="bg-black text-white w-10 h-10 rounded-full justify-center flex items-center text-lg">❯</a>
+                      </div>
+                    </div> 
+                    <!-- single slider 2 -->
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <div class="hero h-[550px] bg-banner-two-bg bg-blend-hard-light">
+                            <div class="hero-overlay bg-opacity-70"></div>
+                            <div class="hero-content text-center text-neutral-content">
+                              <div class="max-w-2xl">
+                                <h1 class="mb-5 text-7xl text-white font-black leading-tight md:leading-tight">Exotic tastes at your doorstep</h1>
+                                <p class="mb-5 text-lg font-medium text-white">We supply highly quality organic products</p>
+                                <button class="px-6 py-3 text-lg font-bold rounded-md bg-my-background-color border-none outline-none text-white mt-4">Shop Now</button>
+                              </div>
+                            </div>
+                          </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 lg:left-7 lg:right-7 top-1/2">
+                        <a href="#slide1" class="bg-black text-white w-10 h-10 rounded-full justify-center flex items-center text-lg">❮</a> 
+                        <a href="#slide3" class="bg-black text-white w-10 h-10 rounded-full justify-center flex items-center text-lg">❯</a>
+                      </div>
+                    </div> 
+                    <!-- single slider 3 -->
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <div class="hero h-[550px] bg-banner-three-bg bg-blend-hard-light">
                             <div class="hero-overlay bg-opacity-60"></div>
                             <div class="hero-content text-center text-neutral-content">
                               <div class="max-w-2xl">
                                 <h1 class="mb-5 text-7xl text-white font-black leading-tight md:leading-tight">Exotic tastes at your doorstep</h1>
-                                <p class="mb-5 text-xl font-medium text-white">We supply highly quality organic products</p>
-                                <button class="btn bg-my-background-color border-none outline-none text-white">Shop Now</button>
+                                <p class="mb-5 text-lg font-medium text-white">We supply highly quality organic products</p>
+                                <button class="px-6 py-3 text-lg font-bold rounded-md bg-my-background-color border-none outline-none text-white mt-4">Shop Now</button>
                               </div>
                             </div>
                           </div>
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-7 right-7 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a> 
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 lg:left-7 lg:right-7 top-1/2">
+                        <a href="#slide2" class="bg-black text-white w-10 h-10 rounded-full justify-center flex items-center text-lg">❮</a> 
+                        <a href="#slide4" class="bg-black text-white w-10 h-10 rounded-full justify-center flex items-center text-lg">❯</a>
+                      </div>
+                    </div> 
+                    <!-- single slider 4 -->
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <div class="hero h-[550px] bg-banner-four-bg bg-blend-hard-light">
+                            <div class="hero-overlay bg-opacity-70"></div>
+                            <div class="hero-content text-center text-neutral-content">
+                              <div class="max-w-2xl">
+                                <h1 class="mb-5 text-7xl text-white font-black leading-tight md:leading-tight">Exotic tastes at your doorstep</h1>
+                                <p class="mb-5 text-lg font-medium text-white">We supply highly quality organic products</p>
+                                <button class="px-6 py-3 text-lg font-bold rounded-md bg-my-background-color border-none outline-none text-white mt-4">Shop Now</button>
+                              </div>
+                            </div>
+                          </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 lg:left-7 lg:right-7 top-1/2">
+                        <a href="#slide3" class="bg-black text-white w-10 h-10 rounded-full justify-center flex items-center text-lg">❮</a> 
+                        <a href="#slide1" class="bg-black text-white w-10 h-10 rounded-full justify-center flex items-center text-lg">❯</a>
                       </div>
                     </div> 
 
                   </div>
+                  
+
+
+
+<!-- banner pop  -->
+<div class="grid grid-cols-5 bg-white shadow-lg relative w-10/12 -top-24 mx-auto">
+  <!-- single pop fruit card 1 -->
+  <div class="card rounded-none">
+    <figure class="px-5 pt-5">
+      <img src="./images/fruit1.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body p-5 items-center text-center">
+      <h2 class="card-title text-lg text-my-text-color font-bold">Grape</h2>
+    </div>
+  </div>
+  <!-- single pop fruit card 2 -->
+  <div class="card rounded-none">
+    <figure class="px-5 pt-5">
+      <img src="./images/fruit2.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body p-5 items-center text-center">
+      <h2 class="card-title text-lg text-my-text-color font-bold">Orange</h2>
+    </div>
+  </div>
+  <!-- single pop fruit card 3 -->
+  <div class="card rounded-none">
+    <figure class="px-5 pt-5">
+      <img src="./images/fruit3.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body p-5 items-center text-center">
+      <h2 class="card-title text-lg text-my-text-color font-bold">Mango</h2>
+    </div>
+  </div>
+  <!-- single pop fruit card 4 -->
+  <div class="card rounded-none">
+    <figure class="px-5 pt-5">
+      <img src="./images/fruit4.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body p-5 items-center text-center">
+      <h2 class="card-title text-lg text-my-text-color font-bold">Strawberry</h2>
+    </div>
+  </div>
+  <!-- single pop fruit card 5 -->
+  <div class="card rounded-none">
+    <figure class="px-5 pt-5">
+      <img src="./images/fruit5.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body p-5 items-center text-center">
+      <h2 class="card-title text-lg text-my-text-color font-bold">Mango</h2>
+    </div>
+  </div>
+</div>
             </div>
+        </section>
+        <!-- Deal of the day section start -->
+        <section>
+          <!-- top container -->
+          <div class="flex justify-between">
+          <div class="w-1/2">
+            <h2 class="text-4xl font-black text-my-heading">Deal of the day</h2>
+            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <!-- count down container -->
+          <div class="flex">
+            <!-- single digit -->
+          <div class="text-center flex">
+            <div class="flex flex-col items-center">
+            <h2 class="text-4xl font-black text-my-heading-color">29</h2>
+            <p class="text-my-text-color mt-1">Days</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical text-lg mt-2 ml-3"></i>
+          </div>
+            <!-- single digit -->
+          <div class="text-center flex ml-4">
+            <div class="flex flex-col items-center">
+            <h2 class="text-4xl font-black text-my-heading-color">15</h2>
+            <p class="text-my-text-color mt-1">Hours</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical text-lg mt-2 ml-4"></i>
+          </div>
+            <!-- single digit -->
+          <div class="text-center flex ml-4">
+            <div class="flex flex-col items-center">
+            <h2 class="text-4xl font-black text-my-heading-color">25</h2>
+            <p class="text-my-text-color mt-1">Minutes</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical text-lg mt-2 ml-4"></i>
+          </div>
+            <!-- single digit -->
+          <div class="text-center flex ml-4">
+            <div class="flex flex-col items-center">
+            <h2 class="text-4xl font-black text-my-heading-color">08</h2>
+            <p class="text-my-text-color mt-1">Seconds</p>
+            </div>
+          </div>
+
+        </div>
+
+        </div>
         </section>
     </main>
     <!-- footer section -->
     <footer>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
     </footer>
 </body>
 </html>
