@@ -29,6 +29,7 @@
                 },
                 backgroundColor: {
                  'my-background-color': '#F85559',
+                 'my-footer-bg': '#121212'
                 },
                 backgroundImage: {
                     'banner-one-bg': 'url(./images/banner1.png),linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)',
@@ -67,11 +68,11 @@
                   <label tabindex="0" class="text-2xl lg:hidden ">
                     <i class="fa-solid fa-bars"></i>
                   </label>
-                  <ul tabindex="0" class="menu -left-48 menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
-                    <li><a class="text-lg text-text-heading-color">Home</a></li>
-                   <li><a class="text-lg text-text-heading-color">About Us</a></li>
-                   <li><a class="text-lg text-text-heading-color">Shop</a></li>
-                   <li><a class="text-lg text-heading-color">All Fruits</a></li>
+                  <ul tabindex="0" class="menu bg-white -left-48 menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                    <li><a class="text-base text-text-heading-color">Home</a></li>
+                   <li><a class="text-base text-text-heading-color">About Us</a></li>
+                   <li><a class="text-base text-text-heading-color">Shop</a></li>
+                   <li><a class="text-base text-heading-color">All Fruits</a></li>
                   </ul>
                 </div>
                 <a class="hidden lg:block">
@@ -88,7 +89,7 @@
     <!-- main section -->
     <main class="max-w-screen-xl mx-auto">
         <!-- banner section -->
-        <section class="mt-5">
+        <section class="lg:mt-5">
             <!-- banner container -->
             <div class="relative">
                 <div class="carousel w-full">
@@ -603,93 +604,153 @@
         </section>
 
         <!-- why choose us section start -->
-        <section class="mt-20">
+        <section class="mt-16 lg:mt-24 px-5 lg:px-0">
           <h1 class="mb-5 mt-10 text-3xl lg:text-4xl text-center font-black">Why Choose Us</h1>
-          <p class="mb-4 w-1/2 px-5 mx-auto text-center text-my-text-color leading-7">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <p class="mb-4 lg:w-1/2 lg:px-5 mx-auto text-center text-my-text-color leading-7">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           <!-- choose us grid container section -->
-          <div class="grid gap-8 mt-10 grid-cols-1 lg:grid-cols-3">
+          <div class="flex flex-col lg:flex-row gap-8 mt-6 lg:mt-16">
             <!-- left -->
-            <div class="">
-
+            <div class="flex-1">
               <!-- single point about me 1 -->
-              <div class="flex gap-5 items-center">
+              <div class="flex flex-col lg:flex-row gap-5 items-center mb-6">
                 <div>
-                  <div class="w-16 h-16 text-gray-700 flex items-center justify-center rounded-full text-2xl bg-gray-300"><i class="fa-solid fa-users"></i></div>
+                  <div class="w-14 h-14 text-gray-700 flex items-center justify-center rounded-full text-xl bg-gray-200"><i class="fa-solid fa-users"></i></div>
                 </div>
-                <div>
+                <div class="text-center lg:text-left">
                   <h3 class="text-xl text-my-heading-color font-black pb-3">Dedicated Team</h3>
-                  <hr class="w-1/3 border-2 border-gray-300">
+                  <div class="flex justify-center lg:justify-start"><hr class="w-1/3 border-2 border-gray-300"></div>
                   <p class="text-base pt-3 font-normal text-my-text-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>
               </div>
               <!-- single point about me 2 -->
-              <div class="flex gap-5 items-center">
+              <div class="flex flex-col lg:flex-row gap-5 items-center mt-2 mb-8">
                 <div>
-                  <div class="w-16 h-16 text-gray-700 flex items-center justify-center rounded-full text-2xl bg-gray-300"><i class="fa-solid fa-users"></i></div>
+                  <div class="w-14 h-14 text-gray-700 flex items-center justify-center rounded-full text-xl bg-gray-200"><i class="fa-regular fa-heart"></i></div>
                 </div>
-                <div>
+                <div class="text-center lg:text-left">
                   <h3 class="text-xl text-my-heading-color font-black pb-3">Fresh is Best</h3>
-                  <hr class="w-1/3 border-2 border-gray-300">
+                  <div class="flex justify-center lg:justify-start"><hr class="w-1/3 border-2 border-gray-300"></div>
                   <p class="text-base pt-3 font-normal text-my-text-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>
               </div>
               <!-- single point about me 3 -->
-              <div class="flex gap-5 items-center">
+              <div class="flex flex-col lg:flex-row gap-5 items-center mb-6">
                 <div>
-                  <div class="w-16 h-16 text-gray-700 flex items-center justify-center rounded-full text-2xl bg-gray-300"><i class="fa-solid fa-users"></i></div>
+                  <div class="w-14 h-14 text-gray-700 flex items-center justify-center rounded-full text-xl bg-gray-200"><i class="fa-solid fa-gift"></i></div>
                 </div>
-                <div>
+                <div class="text-center lg:text-left">
                   <h3 class="text-xl text-my-heading-color font-black pb-3">Gift Certificates</h3>
-                  <hr class="w-1/3 border-2 border-gray-300">
+                  <div class="flex justify-center lg:justify-start"><hr class="w-1/3 border-2 border-gray-300"></div>
                   <p class="text-base pt-3 font-normal text-my-text-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>
               </div>
 
             </div>
+            <!-- middle -->
+            <div class="flex-1 order-first lg:order-none">
             <img src="images/whychoose1.png" alt="">
-            <div>
-b
             </div>
             <!-- end -->
-            <div>
-c
+            <div class="text-center lg:text-right flex-1">
+                 <!-- single point about me 1 -->
+                 <div class="flex flex-col-reverse lg:flex-row gap-5 items-center mb-6">
+                  <div>
+                    <h3 class="text-xl text-my-heading-color font-black pb-3">Integrated Supplier</h3>
+                    <div class="flex justify-center lg:justify-end"><hr class="w-1/3 border-2 border-gray-300"></div>
+                    <p class="text-base pt-3 font-normal text-my-text-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  </div>
+                  <div>
+                    <div class="w-14 h-14 text-gray-700 flex items-center justify-center rounded-full text-xl bg-gray-200"><i class="fa-solid fa-seedling"></i></div>
+                  </div>
+                </div>
+                <!-- single point about me 2 -->
+                <div class="flex flex-col-reverse lg:flex-row gap-5 items-center mt-2 mb-8">
+                  <div>
+                    <h3 class="text-xl text-my-heading-color font-black pb-3">Sustainable Practice</h3>
+                    <div class="flex justify-center lg:justify-end"><hr class="w-1/3 border-2 border-gray-300"></div>
+                    <p class="text-base pt-3 font-normal text-my-text-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  </div>
+                  <div>
+                    <div class="w-14 h-14 text-gray-700 flex items-center justify-center rounded-full text-xl bg-gray-200"><i class="fa-solid fa-ice-cream"></i></div>
+                  </div>
+                </div>
+                <!-- single point about me 3 -->
+                <div class="flex flex-col-reverse lg:flex-row gap-5 items-center mb-6">
+                  <div>
+                    <h3 class="text-xl text-my-heading-color font-black pb-3">The Benefits Only</h3>
+                    <div class="flex justify-center lg:justify-end"><hr class="w-1/3 border-2 border-gray-300"></div>
+                    <p class="text-base pt-3 font-normal text-my-text-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  </div>
+                  <div>
+                    <div class="w-14 h-14 text-gray-700 flex items-center justify-center rounded-full text-xl bg-gray-200"><i class="fa-regular fa-thumbs-up"></i></div>
+                  </div>
+                </div>
             </div>
           </div>
         </section>
     </main>
     <!-- footer section -->
-    <footer>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <footer class="mt-24 bg-my-footer-bg">
+      <div class="max-w-screen-xl mx-auto">
+
+      <div class="footer footer-center py-24 bg-my-footer-bg text-white text-base-content rounded">
+        <div class="flex gap-3 justify-center items-center">
+          <div><img class="w-10" src="images/logo.png" alt=""></div>
+          <h1 class="text-4xl font-bold">Fruit Brust</h1>
+        </div>
+        <div class="grid grid-flow-col gap-4 mt-5">
+          <a class="link link-hover text-base">Home</a> 
+          <a class="link link-hover text-base">About Us</a> 
+          <a class="link link-hover text-base">Shop</a> 
+          <a class="link link-hover text-base">All Fruits</a>
+          <a class="link link-hover text-base">Support</a>
+          <a class="link link-hover text-base">My Account</a>
+        </div> 
+        <div>
+          <div class="grid grid-flow-col gap-4 mt-5">
+            <a class="text-2xl mx-2"><i class="fa-brands fa-twitter"></i></a> 
+            <a class="text-2xl mx-2"><i class="fa-brands fa-facebook"></i></a> 
+            <a class="text-2xl mx-2"><i class="fa-brands fa-youtube"></i></a>
+            <a class="text-2xl mx-2"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="text-2xl mx-2"><i class="fa-brands fa-instagram"></i></a>
+            <a class="text-2xl mx-2"><i class="fa-brands fa-apple"></i></a>
+          </div>
+        </div> 
+      </div>
+
+
+    </div>
     </footer>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </body>
 </html>
